@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">XO Game</h1>
+    <div class="Game">
+        <div class="X"draggable="true">X</div>
+        <div class="O" draggable="true">O</div>
+    </div>
+    <table border style="margin: auto;">
+        <tr>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+        </tr>
+        <tr>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+        </tr>
+        <tr>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+        </tr>
+    </table>
+    <div id="customAlert" class="alert">
+        <div class="alert-content">
+            <p id="alertMessage"></p>
+            <button onclick="closeWinAlert()">Play Again</button>
+        </div>
+    </div>    
+    <script src="./script.js"></script>
+</body>
+</html>
