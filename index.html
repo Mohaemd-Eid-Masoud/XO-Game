@@ -12,23 +12,26 @@
         <div class="X"draggable="true">X</div>
         <div class="O" draggable="true">O</div>
     </div>
+    <div class="board">
     <table border style="margin: auto;">
         <tr>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+        </tr>
+        <tr> 
+            <td ></td>
+            <td ></td>
+            <td ></td>
         </tr>
         <tr>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-        </tr>
-        <tr>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
-            <td ondragover="allowDrop(event)" ondrop="drop(event)"></td>
+            <td ></td>
+            <td ></td>
+            <td ></td>
         </tr>
     </table>
+    </div>
+    <button class="btn"onclick="resetGame()">Reset</button>
     <div id="customAlert" class="alert">
         <div class="alert-content">
             <p id="alertMessage"></p>
